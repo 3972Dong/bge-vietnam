@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>합격 결과 & 전략 — BGE-Vietnam</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0a2240;--navy2:#1a3a5c;--gold:#c8962a;--gold2:#e8b84b;--white:#fff;--off:#f7f5f0;--light:#edeae3;--border:#d8d4cc;--gray:#6b6b6b;--text:#1a1a2e;--green:#1b5e20;--green2:#2e7d32;--red:#b71c1c}
+html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro','Noto Sans KR',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+.topbar{background:var(--navy);color:#8aaccc;font-size:12px;padding:7px 0}
+.topbar .w{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
+.topbar a{color:#8aaccc;text-decoration:none;margin-left:14px}.topbar a:hover{color:var(--gold2)}
+header{background:var(--white);border-bottom:2.5px solid var(--navy);position:sticky;top:0;z-index:300;box-shadow:0 2px 16px rgba(10,34,64,.08)}
+.hdr{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:68px;gap:20px}
+.logo{text-decoration:none;display:flex;flex-direction:column;flex-shrink:0}
+.logo-en{font-family:'Playfair Display',serif;font-size:24px;color:var(--navy);font-weight:800;line-height:1}
+.logo-sub{font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-top:2px}
+nav{display:flex;height:68px;flex:1}
+nav ul{display:flex;list-style:none;height:100%;margin:0;padding:0}
+nav ul li{position:relative;height:100%}
+nav ul li>a{display:flex;align-items:center;padding:0 12px;height:100%;font-size:13px;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap}
+nav ul li>a:hover,nav ul li.cur>a{color:var(--gold);border-bottom-color:var(--gold)}
+.dd{display:none;position:absolute;top:100%;left:0;min-width:220px;background:var(--white);border-top:3px solid var(--gold);box-shadow:0 12px 36px rgba(0,0,0,.13);z-index:400}
+nav ul li:hover .dd{display:block}
+.dt{font-size:10px;font-weight:700;color:var(--gold);padding:10px 16px 4px;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--border)}
+.dd ul{list-style:none;padding:4px 0}
+.dd ul li a{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;font-size:12.5px;color:#333;text-decoration:none;border-left:3px solid transparent;transition:all .15s;height:auto;border-bottom:none}
+.dd ul li a::after{content:"›";color:var(--gold);font-size:15px}
+.dd ul li a:hover{background:var(--off);color:var(--navy);border-left-color:var(--gold);padding-left:20px}
+.hdr-r{margin-left:auto;flex-shrink:0}
+.btn-cta{background:var(--gold);color:white;padding:9px 20px;font-size:12.5px;font-weight:600;border-radius:3px;text-decoration:none;transition:all .2s}
+.btn-cta:hover{background:var(--gold2);transform:translateY(-1px)}
+.w{max-width:1240px;margin:0 auto;padding:0 24px}
+/* HERO */
+.hero{background:linear-gradient(135deg,#061628 0%,var(--navy) 55%,#0d3060 100%);padding:80px 24px 70px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(200,150,42,.1) 1px,transparent 1px);background-size:28px 28px}
+.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:5px;background:var(--gold)}
+.hero-in{position:relative;z-index:1;max-width:860px;margin:0 auto}
+.hero-kicker{display:inline-block;background:rgba(200,150,42,.2);border:1px solid rgba(200,150,42,.5);color:var(--gold2);font-size:12px;font-weight:700;padding:5px 18px;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;border-radius:2px}
+.hero-title{font-family:'Playfair Display',serif;font-size:50px;color:white;font-weight:800;line-height:1.12;margin-bottom:16px}
+.hero-title em{color:var(--gold2);font-style:italic}
+.hero-sub{color:#9ab8d4;font-size:18px;line-height:1.75;margin-bottom:10px}
+.hero-sub strong{color:var(--gold2)}
+.hero-trust{color:#8aaccc;font-size:14px;margin-bottom:32px}
+.hero-trust strong{color:white}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-gold{background:var(--gold);color:white;padding:14px 32px;font-size:15px;font-weight:700;border-radius:3px;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,150,42,.4)}
+.btn-outline{background:transparent;color:white;padding:13px 28px;font-size:14px;font-weight:600;border:2px solid rgba(255,255,255,.4);border-radius:3px;text-decoration:none;transition:all .2s}
+.btn-outline:hover{background:rgba(255,255,255,.08);border-color:white}
+/* SECTIONS */
+section{padding:72px 0}
+.sec-head{text-align:center;margin-bottom:48px}
+.stag{font-size:11px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-weight:700;display:block;margin-bottom:10px}
+.stitle{font-family:'Playfair Display',serif;font-size:34px;color:var(--navy);font-weight:700;margin-bottom:14px;line-height:1.2}
+.sdesc{color:var(--gray);font-size:15px;max-width:580px;margin:0 auto;line-height:1.8}
+/* DARK */
+.dark{background:var(--navy)}
+.dark .stag{color:var(--gold2)}
+.dark .stitle{color:white}
+.dark .sdesc{color:#8aaccc}
+/* UNIS */
+.uni-strip{background:var(--off);padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.uni-msg{text-align:center;margin-bottom:20px}
+.uni-msg h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);font-weight:700;margin-bottom:8px}
+.uni-msg p{font-size:13.5px;color:var(--gray)}
+.uni-msg p strong{color:var(--navy)}
+.uni-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:900px;margin:0 auto}
+.uni-tag{background:white;border:1.5px solid var(--border);color:var(--navy);font-size:13.5px;font-weight:600;padding:8px 20px;border-radius:3px;transition:all .2s}
+.uni-tag:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+/* STRATEGY CARDS */
+.strat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.strat-card{border:1px solid var(--border);overflow:hidden;transition:all .25s}
+.strat-card:hover{box-shadow:0 10px 36px rgba(0,0,0,.1);transform:translateY(-4px)}
+.strat-head{padding:22px 24px;display:flex;align-items:center;gap:14px}
+.strat-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.strat-name{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white}
+.strat-sub{font-size:12px;color:rgba(255,255,255,.7);margin-top:3px}
+.strat-body{padding:20px 24px;background:white}
+.strat-features{list-style:none;margin-bottom:14px}
+.strat-features li{font-size:13px;color:var(--gray);padding:5px 0;border-bottom:1px solid var(--light);display:flex;gap:8px}
+.strat-features li::before{content:"✓";color:var(--gold);font-weight:700;flex-shrink:0}
+.strat-one{font-size:13px;font-style:italic;color:var(--navy);font-weight:600;margin-bottom:10px}
+.strat-point{background:var(--off);padding:10px 14px;font-size:12.5px;color:var(--navy);border-left:3px solid var(--gold);font-weight:500}
+/* COMPARE TABLE */
+.compare-wrap{max-width:700px;margin:0 auto}
+.compare-table{width:100%;border-collapse:collapse;font-size:14px}
+.compare-table th{padding:14px 20px;font-size:12px;font-weight:700;letter-spacing:.5px;text-align:center}
+.compare-table td{padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.08);text-align:center;font-size:13px;color:#8aaccc}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table .label{text-align:left;color:rgba(255,255,255,.6);font-size:12px}
+.th-ucla{background:#1a3a5c;color:white}
+.th-berk{background:#1b5e20;color:white}
+.highlight-cell{color:var(--gold2);font-weight:600}
+.compare-msg{text-align:center;margin-top:24px;font-size:14px;color:#8aaccc;font-style:italic}
+.compare-msg strong{color:var(--gold2)}
+/* CASE CARDS */
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.case-card{background:white;border:1px solid var(--border);overflow:hidden;transition:all .25s;cursor:pointer}
+.case-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.12);transform:translateY(-5px)}
+.case-head{padding:20px 22px;position:relative}
+.case-school{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:8px}
+.case-title{font-family:'Playfair Display',serif;font-size:17px;color:white;font-weight:700;line-height:1.3}
+.case-body{padding:20px 22px}
+.case-gpa{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.case-gpa-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:800;color:var(--navy)}
+.case-gpa-label{font-size:11px;color:var(--gray)}
+.case-problem{background:rgba(183,28,28,.06);border-left:3px solid var(--red);padding:8px 12px;font-size:12.5px;color:var(--red);margin-bottom:12px}
+.case-strategy{background:var(--off);padding:10px 12px;font-size:12.5px;color:var(--navy);margin-bottom:12px;border-left:3px solid var(--gold)}
+.case-result{background:rgba(27,94,32,.08);border-left:3px solid var(--green2);padding:10px 12px;font-size:13px;font-weight:700;color:var(--green)}
+.case-arrow{display:inline-block;margin-top:14px;font-size:12px;color:var(--gold);font-weight:600}
+/* COMPARISON CARDS */
+.vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:0 auto}
+.vs-card{padding:28px 24px;border-radius:4px}
+.vs-bad{background:rgba(183,28,28,.06);border:1.5px solid rgba(183,28,28,.2)}
+.vs-good{background:rgba(27,94,32,.06);border:1.5px solid rgba(27,94,32,.3)}
+.vs-title{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.vs-bad .vs-title{color:var(--red)}
+.vs-good .vs-title{color:var(--green)}
+.vs-list{list-style:none}
+.vs-list li{font-size:13.5px;padding:7px 0;border-bottom:1px solid rgba(0,0,0,.06);display:flex;gap:8px;line-height:1.5}
+.vs-list li:last-child{border-bottom:none}
+.vs-bad .vs-list li::before{content:"✗";color:var(--red);font-weight:700;flex-shrink:0}
+.vs-good .vs-list li::before{content:"✓";color:var(--green2);font-weight:700;flex-shrink:0}
+/* TRUST */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:28px 22px;text-align:center}
+.trust-num{font-family:'Playfair Display',serif;font-size:44px;color:var(--gold2);font-weight:800;display:block;line-height:1}
+.trust-label{font-size:13px;color:#8aaccc;margin-top:8px;display:block;line-height:1.5}
+/* CTA */
+.cta-section{background:linear-gradient(135deg,#061628,var(--navy));text-align:center;padding:80px 24px;position:relative;overflow:hidden}
+.cta-section::before{content:"";position:absolute;inset:-50%;background-image:radial-gradient(circle,rgba(200,150,42,.06) 1px,transparent 1px);background-size:30px 30px}
+.cta-in{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.cta-warn{display:inline-block;background:rgba(183,28,28,.2);border:1px solid rgba(183,28,28,.4);color:#ef9a9a;font-size:12px;font-weight:700;padding:5px 16px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;border-radius:2px}
+.cta-t{font-family:'Playfair Display',serif;font-size:36px;color:white;margin-bottom:14px;font-weight:700;line-height:1.2}
+.cta-d{color:#8aaccc;font-size:15px;margin-bottom:10px;line-height:1.7}
+.cta-warn2{font-size:13px;color:#ef9a9a;margin-bottom:28px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.cta-pressure{font-size:13px;color:rgba(255,255,255,.5);font-style:italic}
+/* FOOTER */
+footer{background:#070d18;color:#627a90}
+.ft{max-width:1240px;margin:0 auto;padding:44px 24px 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
+.flogo{font-family:'Playfair Display',serif;font-size:19px;color:white;font-weight:800;margin-bottom:10px}
+.ftag{font-size:13px;line-height:1.7;margin-bottom:14px}
+.fcon p{font-size:13px;margin-bottom:6px}.fcon a{color:var(--gold2);text-decoration:none}
+.fcol h4{font-size:11px;font-weight:700;color:white;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:13px}
+.fcol ul{list-style:none}.fcol ul li{margin-bottom:7px}.fcol ul li a{font-size:13px;color:#627a90;text-decoration:none;transition:color .2s}.fcol ul li a:hover{color:var(--gold2)}
+.fb{border-top:1px solid rgba(255,255,255,.07)}
+.fb-in{max-width:1240px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;font-size:11.5px;flex-wrap:wrap;gap:8px}
+.fbl{display:flex;gap:16px}.fbl a{color:#627a90;text-decoration:none}
+.float{position:fixed;bottom:24px;right:24px;background:var(--gold);color:white;padding:12px 18px;font-size:12.5px;font-weight:700;border-radius:40px;box-shadow:0 6px 20px rgba(200,150,42,.4);text-decoration:none;z-index:999;transition:all .2s}
+.float:hover{background:var(--gold2);transform:translateY(-2px)}
+@media(max-width:1024px){.strat-grid,.case-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(3,1fr)}.ft{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){nav{display:none}.hero-title{font-size:32px}.strat-grid,.case-grid,.vs-grid{grid-template-columns:1fr}.trust-grid{grid-template-columns:repeat(2,1fr)}.ft{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="w">
+    <span>🇻🇳 본사: 하노이 · 🇺🇸 Boston · New York · LA | 미국 유학 전문 25년</span>
+    <div><a href="contact.html">무료 상담</a><a href="index.html">홈</a></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="hdr">
+    <a class="logo" href="index.html">
+      <span class="logo-en">BGE<span style="color:var(--gold);font-size:14px;font-weight:700">-Vietnam</span></span>
+      <span class="logo-sub">Global Education Network</span>
+    </a>
+    <nav><ul>
+      <li><a href="early-study.html">조기유학 ▾</a>
+        <div class="dd"><div class="dt">미국 조기유학</div><ul>
+          <li><a href="early-study.html">파트너 학교 전체 (50개+)</a></li>
+          <li><a href="exchange.html">교환학생 프로그램 (J-1)</a></li>
+          <li><a href="boarding.html">보딩스쿨</a></li>
+          <li><a href="boarding.html">Day School 유학 & 케어</a></li>
+          <li><a href="summer.html">여름 캠프</a></li>
+          <li><a href="preparation.html">Study Abroad Preparation</a></li>
+        </ul></div>
+      </li>
+      <li><a href="college.html">대학진학 ▾</a>
+        <div class="dd"><div class="dt">미국 대학진학</div><ul>
+          <li><a href="college.html">전략적 대학 플래닝</a></li>
+          <li><a href="college.html">명문대 입학 컨설팅</a></li>
+          <li><a href="college.html">에세이 & 인터뷰 코칭</a></li>
+          <li><a href="college.html">CC → 편입 (2+2)</a></li>
+          <li><a href="results.html">합격 후기</a></li>
+        </ul></div>
+      </li>
+      <li><a href="summer.html">프로그램 ▾</a>
+        <div class="dd"><div class="dt">특별 프로그램</div><ul>
+          <li><a href="summer.html">Extracurricular Enrichment</a></li>
+          <li><a href="summer.html">여름 인턴십 & 리서치</a></li>
+          <li><a href="esl.html">어학연수 & ESL</a></li>
+        </ul></div>
+      </li>
+      <li><a href="about.html">BGE 소개</a></li>
+      <li class="cur"><a href="results.html">합격 후기</a></li>
+      <li><a href="contact.html">상담 신청</a></li>
+    </ul></nav>
+    <div class="hdr-r"><a class="btn-cta" href="contact.html">무료 상담 신청</a></div>
+  </div>
+</header>
+
+<!-- ══ SECTION 1: HERO ══════════════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-in">
+    <div class="hero-kicker">🏆 BGE-Vietnam 합격 결과 & 전략</div>
+    <h1 class="hero-title">
+      같은 GPA인데,<br>
+      왜 결과는 <em>완전히 다를까요?</em>
+    </h1>
+    <p class="hero-sub"><strong>대학 합격은 성적이 아니라</strong> 전략과 방향으로 결정됩니다</p>
+    <p class="hero-trust">25년 동안 &nbsp;👉&nbsp; <strong>1,000명 이상</strong>의 학생 진학 결과가 이것을 증명합니다</p>
+    <div class="hero-btns">
+      <a class="btn-gold" href="contact.html">📅 무료 상담 신청하기</a>
+      <a class="btn-outline" href="#cases">우리 아이 가능성 확인하기</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SECTION 2: 합격 결과 ══════════════════════════════════════════════════ -->
+<div class="uni-strip">
+  <div class="w">
+    <div class="uni-msg">
+      <h3>좋은 대학은 "열심히 한 학생"을 뽑지 않습니다 &nbsp;—&nbsp; <span style="color:var(--gold)">"맞는 학생"</span>을 뽑습니다</h3>
+      <p style="margin-top:8px;margin-bottom:6px">성적이 좋아도 떨어지는 학생이 있습니다 &nbsp;·&nbsp; 준비가 부족해도 합격하는 학생이 있습니다</p>
+      <p><strong>차이는 단 하나 → 전략과 매칭입니다</strong></p>
+    </div>
+    <div class="uni-list">
+      <div class="uni-tag">Harvard</div>
+      <div class="uni-tag">MIT</div>
+      <div class="uni-tag">UPenn</div>
+      <div class="uni-tag">UCLA</div>
+      <div class="uni-tag">UC Berkeley</div>
+      <div class="uni-tag">Michigan</div>
+      <div class="uni-tag">Georgia Tech</div>
+      <div class="uni-tag">NYU</div>
+      <div class="uni-tag">UC Irvine</div>
+      <div class="uni-tag">Wisconsin</div>
+      <div class="uni-tag">Penn State</div>
+      <div class="uni-tag">Minnesota</div>
+      <div class="uni-tag">Northeastern</div>
+      <div class="uni-tag">Boston University</div>
+      <div class="uni-tag">USC</div>
+      <div class="uni-tag">Columbia</div>
+      <div class="uni-tag">Dartmouth</div>
+      <div class="uni-tag">Johns Hopkins</div>
+    </div>
+    <div style="text-align:center;margin-top:28px">
+      <a class="btn-gold" href="contact.html">📅 나도 합격할 수 있을까? 지금 확인하기</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SECTION 3: 대학별 전략 ════════════════════════════════════════════════ -->
+<section>
+  <div class="w">
+    <div class="sec-head">
+      <span class="stag">University Strategy</span>
+      <h2 class="stitle">대학마다 원하는 학생은 다릅니다</h2>
+      <p class="sdesc">같은 학생도 어떤 전략으로 지원하느냐에 따라 결과가 완전히 달라집니다. BGE는 각 대학의 입학 기준을 정확히 알고 있습니다.</p>
+    </div>
+    <div class="strat-grid">
+
+      <!-- UCLA -->
+      <div class="strat-card">
+        <div class="strat-head" style="background:linear-gradient(135deg,#1a237e,#283593)">
+          <div class="strat-icon" style="background:rgba(255,255,255,.15)">🏆</div>
+          <div>
+            <div class="strat-name">UCLA</div>
+            <div class="strat-sub">결과 중심 — Performance</div>
+          </div>
+        </div>
+        <div class="strat-body">
+          <ul class="strat-features">
+            <li>높은 GPA + 어려운 과목 (AP·IB)</li>
+            <li>명확하고 측정 가능한 성과</li>
+            <li>리더십 경험</li>
+            <li>균형 잡힌 과외활동</li>
+          </ul>
+          <div class="strat-one">"이미 준비된 완성형 학생"</div>
+          <div class="strat-point">👉 결과와 성과를 보여줘야 합격 가능</div>
+        </div>
+      </div>
+
+      <!-- UC Berkeley -->
+      <div class="strat-card">
+        <div class="strat-head" style="background:linear-gradient(135deg,#1b5e20,#2e7d32)">
+          <div class="strat-icon" style="background:rgba(255,255,255,.15)">🔥</div>
+          <div>
+            <div class="strat-name">UC Berkeley</div>
+            <div class="strat-sub">의미 중심 — Purpose</div>
+          </div>
+        </div>
+        <div class="strat-body">
+          <ul class="strat-features">
+            <li>지적 깊이 — 왜 이 분야인가?</li>
+            <li>개인 관점과 독특한 시각</li>
+            <li>사회적 영향력과 기여</li>
+          </ul>
+          <div class="strat-one">"자신만의 방향을 가진 학생"</div>
+          <div class="strat-point">👉 왜 하는지 + 어떤 영향을 주는지가 핵심</div>
+        </div>
+      </div>
+
+      <!-- UPenn -->
+      <div class="strat-card">
+        <div class="strat-head" style="background:linear-gradient(135deg,#880e4f,#ad1457)">
+          <div class="strat-icon" style="background:rgba(255,255,255,.15)">💡</div>
+          <div>
+            <div class="strat-name">UPenn / Wharton</div>
+            <div class="strat-sub">실용 중심 — Impact</div>
+          </div>
+        </div>
+        <div class="strat-body">
+          <ul class="strat-features">
+            <li>비즈니스·사회적 임팩트 관심</li>
+            <li>실제 프로젝트·창업·리서치 경험</li>
+            <li>구체적인 커리어 목표</li>
+          </ul>
+          <div class="strat-one">"세상을 바꾸려는 실행형 학생"</div>
+          <div class="strat-point">👉 무엇을 만들고 싶은지 구체적으로 보여줘야</div>
+        </div>
+      </div>
+
+      <!-- MIT -->
+      <div class="strat-card">
+        <div class="strat-head" style="background:linear-gradient(135deg,#006064,#00838f)">
+          <div class="strat-icon" style="background:rgba(255,255,255,.15)">🔬</div>
+          <div>
+            <div class="strat-name">MIT / Georgia Tech</div>
+            <div class="strat-sub">혁신 중심 — Innovation</div>
+          </div>
+        </div>
+        <div class="strat-body">
+          <ul class="strat-features">
+            <li>수학·과학 최고 수준 실력</li>
+            <li>리서치·발명·문제 해결 경험</li>
+            <li>협업과 커뮤니티 기여</li>
+          </ul>
+          <div class="strat-one">"문제를 직접 푸는 공학자형 학생"</div>
+          <div class="strat-point">👉 어떤 문제를 어떻게 풀었는지가 핵심</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 비교 메시지 -->
+    <div style="max-width:700px;margin:36px auto 0;background:var(--navy);padding:28px 32px;text-align:center">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:16px;border:1px solid rgba(255,255,255,.1)">
+        <div style="padding:16px;border-right:1px solid rgba(255,255,255,.1)">
+          <div style="font-size:11px;color:#8aaccc;margin-bottom:6px">UCLA</div>
+          <div style="color:var(--gold2);font-weight:700">결과 (Achievement)</div>
+          <div style="font-size:12px;color:#8aaccc;margin-top:4px">완성형 학생</div>
+        </div>
+        <div style="padding:16px">
+          <div style="font-size:11px;color:#8aaccc;margin-bottom:6px">UC Berkeley</div>
+          <div style="color:var(--gold2);font-weight:700">의미 (Purpose)</div>
+          <div style="font-size:12px;color:#8aaccc;margin-top:4px">사상가형 학생</div>
+        </div>
+      </div>
+      <p style="font-size:14px;color:rgba(255,255,255,.8);font-style:italic">같은 학생도 <strong style="color:var(--gold2)">전략에 따라 결과가 달라집니다</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 4: 학생 사례 ══════════════════════════════════════════════════ -->
+<section class="dark" id="cases">
+  <div class="w">
+    <div class="sec-head">
+      <span class="stag">Real Cases</span>
+      <h2 class="stitle">실제 학생 사례</h2>
+      <p class="sdesc">성적이 전부가 아닙니다. BGE의 전략이 어떻게 결과를 만들었는지 확인하세요.</p>
+    </div>
+    <div class="case-grid">
+
+      <!-- Case 1 -->
+      <div class="case-card" onclick="location.href='contact.html'">
+        <div class="case-head" style="background:linear-gradient(135deg,#880e4f,#c2185b)">
+          <div class="case-school">UPenn 합격 사례</div>
+          <div class="case-title">활동은 많았지만 방향이 없던 학생 → UPenn 합격</div>
+        </div>
+        <div class="case-body">
+          <div class="case-gpa">
+            <div class="case-gpa-num">3.85</div>
+            <div class="case-gpa-label">GPA<br>한국 출신</div>
+          </div>
+          <div class="case-problem">❌ 문제: 활동 많지만 연결·방향 없음</div>
+          <div class="case-strategy">💡 전략: 방향 설정 + 활동 재구성 + 스토리 통일</div>
+          <div class="case-result">✅ 결과: University of Pennsylvania 합격</div>
+          <div class="case-arrow">상세 전략 보기 →</div>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="case-card" onclick="location.href='contact.html'">
+        <div class="case-head" style="background:linear-gradient(135deg,#1a237e,#283593)">
+          <div class="case-school">UCLA 합격 사례</div>
+          <div class="case-title">평균적인 스펙의 학생 → UCLA 합격</div>
+        </div>
+        <div class="case-body">
+          <div class="case-gpa">
+            <div class="case-gpa-num">3.65</div>
+            <div class="case-gpa-label">GPA<br>중국 출신</div>
+          </div>
+          <div class="case-problem">❌ 문제: 뚜렷한 강점·스토리 부족</div>
+          <div class="case-strategy">💡 전략: 핵심 활동 집중 + 스토리 설계 + 에세이 차별화</div>
+          <div class="case-result">✅ 결과: UCLA 합격</div>
+          <div class="case-arrow">상세 전략 보기 →</div>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="case-card" onclick="location.href='contact.html'">
+        <div class="case-head" style="background:linear-gradient(135deg,#1b5e20,#2e7d32)">
+          <div class="case-school">Top 50 대학 합격 사례</div>
+          <div class="case-title">GPA 3.0 → Top 50 대학 4개 합격</div>
+        </div>
+        <div class="case-body">
+          <div class="case-gpa">
+            <div class="case-gpa-num">3.0</div>
+            <div class="case-gpa-label">GPA<br>베트남 출신</div>
+          </div>
+          <div class="case-problem">❌ 문제: 낮은 GPA, 준비 부족 상태</div>
+          <div class="case-strategy">💡 전략: GPA 집중 + 리더십 확보 + 전략적 학교 선정</div>
+          <div class="case-result">✅ UC Irvine · Wisconsin · Penn State · Minnesota 합격</div>
+          <div class="case-arrow">상세 전략 보기 →</div>
+        </div>
+      </div>
+
+      <!-- Case 4 -->
+      <div class="case-card" onclick="location.href='contact.html'">
+        <div class="case-head" style="background:linear-gradient(135deg,#006064,#00838f)">
+          <div class="case-school">NYU 합격 사례</div>
+          <div class="case-title">특수 전공 포트폴리오 → NYU 석사 합격</div>
+        </div>
+        <div class="case-body">
+          <div class="case-gpa">
+            <div class="case-gpa-num">3.5</div>
+            <div class="case-gpa-label">GPA<br>한국 출신</div>
+          </div>
+          <div class="case-problem">❌ 문제: 예술 전공, 포트폴리오 방향 불명확</div>
+          <div class="case-strategy">💡 전략: 포트폴리오 재구성 + 목적성 있는 에세이</div>
+          <div class="case-result">✅ NYU 무용 교육학 석사 합격</div>
+          <div class="case-arrow">상세 전략 보기 →</div>
+        </div>
+      </div>
+
+      <!-- Case 5 -->
+      <div class="case-card" onclick="location.href='contact.html'">
+        <div class="case-head" style="background:linear-gradient(135deg,#bf360c,#d84315)">
+          <div class="case-school">대학원 복수 합격 사례</div>
+          <div class="case-title">USC · UT Austin · UC Irvine 3개 동시 합격</div>
+        </div>
+        <div class="case-body">
+          <div class="case-gpa">
+            <div class="case-gpa-num">3.7</div>
+            <div class="case-gpa-label">GPA<br>중국 출신</div>
+          </div>
+          <div class="case-problem">❌ 문제: MSBA 석사 지원, 전략 없이 혼자 준비</div>
+          <div class="case-strategy">💡 전략: 학교별 맞춤 에세이 + 경력 스토리 연결</div>
+          <div class="case-result">✅ USC · UT Austin · UC Irvine 동시 합격</div>
+          <div class="case-arrow">상세 전략 보기 →</div>
+        </div>
+      </div>
+
+      <!-- Case 6 - CTA Card -->
+      <div class="case-card" onclick="location.href='contact.html'" style="background:var(--navy);border-color:var(--gold);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:36px 24px;min-height:280px">
+        <div style="font-size:36px;margin-bottom:16px">🎯</div>
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--gold2);font-weight:700;margin-bottom:12px;line-height:1.3">우리 아이도<br>가능할까요?</div>
+        <div style="font-size:13px;color:#8aaccc;margin-bottom:20px;line-height:1.6">학생 정보를 분석하고<br>합격 가능성을 확인해 드립니다</div>
+        <a class="btn-gold" href="contact.html" style="font-size:13px;padding:11px 22px">무료 상담 신청 →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 5: 비교 ═══════════════════════════════════════════════════════ -->
+<section>
+  <div class="w">
+    <div class="sec-head">
+      <span class="stag">The Difference</span>
+      <h2 class="stitle">차이는 단 하나입니다</h2>
+      <p class="sdesc">많은 학생들이 열심히 준비합니다. 하지만 방향이 틀리면 결과는 바뀌지 않습니다.</p>
+    </div>
+    <div class="vs-grid">
+      <div class="vs-card vs-bad">
+        <div class="vs-title">❌ 일반적인 준비</div>
+        <ul class="vs-list">
+          <li>활동을 많이 하면 된다고 생각</li>
+          <li>방향과 연결 없이 나열만 함</li>
+          <li>어떤 학교에 맞는지 모름</li>
+          <li>에세이에서 본인 스토리를 못 전달</li>
+          <li>결과가 불확실하고 운에 맡김</li>
+        </ul>
+      </div>
+      <div class="vs-card vs-good">
+        <div class="vs-title">✅ BGE-Vietnam 방식</div>
+        <ul class="vs-list">
+          <li>방향을 먼저 설정하고 역방향으로 준비</li>
+          <li>전략 중심 — 활동이 하나의 스토리로 연결</li>
+          <li>대학별 입학 기준에 맞춘 맞춤 지원</li>
+          <li>에세이에서 "이 학생이어야 한다"는 확신 전달</li>
+          <li>결과 가능성을 높이는 체계적 접근</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a class="btn-gold" href="contact.html">📅 지금 우리 아이 전략 확인하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 6: 신뢰 ═══════════════════════════════════════════════════════ -->
+<section class="dark">
+  <div class="w">
+    <div class="sec-head">
+      <span class="stag">25 Years of Results</span>
+      <h2 class="stitle">25년 경험, 1,000명 이상의 결과</h2>
+      <p class="sdesc">단순한 정보가 아니라 — 결과를 만들어온 경험입니다.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <span class="trust-num">1,000+</span>
+        <span class="trust-label">미국 대학 합격자<br>한국·중국·베트남 학생</span>
+      </div>
+      <div class="trust-card">
+        <span class="trust-num">95%</span>
+        <span class="trust-label">목표 대학<br>합격률</span>
+      </div>
+      <div class="trust-card">
+        <span class="trust-num">25년</span>
+        <span class="trust-label">미국 유학 전문<br>실전 경험</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:20px;text-align:center">
+        <div style="font-size:13px;font-weight:700;color:white;margin-bottom:6px">다양한 수준의 학생</div>
+        <div style="font-size:12px;color:#8aaccc">GPA 3.0부터 4.0까지 — 모든 수준에서 결과를 만들었습니다</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:20px;text-align:center">
+        <div style="font-size:13px;font-weight:700;color:white;margin-bottom:6px">Top 대학부터 현실적 목표까지</div>
+        <div style="font-size:12px;color:#8aaccc">아이비리그부터 주립대까지 학생에 맞는 최적 매칭</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:20px;text-align:center">
+        <div style="font-size:13px;font-weight:700;color:white;margin-bottom:6px">실제 결과 기반 전략</div>
+        <div style="font-size:12px;color:#8aaccc">이론이 아니라 실제 합격 데이터에서 나온 전략</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 7: CTA ════════════════════════════════════════════════════════ -->
+<div class="cta-section">
+  <div class="cta-in">
+    <div class="cta-warn">⚠️ 지금 방향이 틀리면 결과는 바뀌지 않습니다</div>
+    <h2 class="cta-t">지금 방향이 틀리면<br>결과는 바뀌지 않습니다</h2>
+    <p class="cta-d">많은 학생들이 노력하지만 — 방향이 틀려 결과를 놓칩니다<br>BGE-Vietnam이 올바른 방향을 찾아드립니다</p>
+    <p class="cta-warn2">👉 준비 시기를 놓치면 선택지가 줄어듭니다</p>
+    <div class="cta-btns">
+      <a class="btn-gold" href="contact.html">📅 지금 상담 받기</a>
+      <a class="btn-outline" href="contact.html">🎯 우리 아이 전략 확인하기</a>
+    </div>
+    <p class="cta-pressure">하노이 본사 · Boston · New York · LA — BGE-Vietnam이 현지에서 함께합니다</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div>
+      <div class="flogo">BGE-Vietnam | 글로벌 교육 네트워크</div>
+      <p class="ftag">"Helping Vietnamese Students Navigate U.S. Education With Confidence"</p>
+      <div class="fcon">
+        <p>🌐 <a href="https://www.studybge.com">www.studybge.com</a></p>
+        <p>🇻🇳 <strong style="color:var(--gold2)">본사:</strong> 하노이, 베트남</p>
+        <p>🇺🇸 <strong style="color:var(--gold2)">미국:</strong> Boston · New York · LA</p>
+        <p>📧 <a href="mailto:info@studybge.com">info@studybge.com</a></p>
+      </div>
+    </div>
+    <div class="fcol"><h4>조기유학</h4><ul>
+      <li><a href="early-study.html">파트너 학교 (50개+)</a></li>
+      <li><a href="exchange.html">교환학생</a></li>
+      <li><a href="boarding.html">보딩스쿨</a></li>
+      <li><a href="summer.html">여름 캠프</a></li>
+    </ul></div>
+    <div class="fcol"><h4>대학진학</h4><ul>
+      <li><a href="college.html">전략적 플래닝</a></li>
+      <li><a href="college.html">입학 컨설팅</a></li>
+      <li><a href="results.html">합격 후기</a></li>
+    </ul></div>
+    <div class="fcol"><h4>고객서비스</h4><ul>
+      <li><a href="contact.html">무료 상담 예약</a></li>
+      <li><a href="preparation.html">비자 안내</a></li>
+      <li><a href="about.html">BGE 소개</a></li>
+    </ul></div>
+  </div>
+  <div class="fb"><div class="fb-in">
+    <span>© 2025 BGE-Vietnam | Boston Global Education Inc. All Rights Reserved.</span>
+    <div class="fbl"><a href="#">이용약관</a><a href="#">개인정보처리방침</a></div>
+  </div></div>
+</footer>
+
+<a class="float" href="contact.html">💬 무료 상담</a>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const h=document.querySelector('header');
+  if(h)h.style.boxShadow=window.scrollY>10?'0 4px 24px rgba(10,34,64,.14)':'0 2px 16px rgba(10,34,64,.08)';
+});
+</script>
+</body>
+</html>
